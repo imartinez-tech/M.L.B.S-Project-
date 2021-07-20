@@ -1,4 +1,4 @@
-var teamName = document.getElementById('team1')
+var teamName = document.getElementById('team1') 
 var teamName2 = document.getElementById('team2')
 var teamName3 = document.getElementById('team3')
 var teamName4 = document.getElementById('team4')
