@@ -30,9 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
              var HomeGame = data.filter(function(game) {
             return game.HomeTeam === "TOR" && game.Status ==="Scheduled"
             })
-              var HomeGame2 = data.filter(function(game) {
-              return game.HomeTeam === "LAA" && game.Status ==="Scheduled"
-             }) 
+            var HomeGame2 = data.filter(function(game) {
+             return game.HomeTeam === "LAA" && game.Status ==="Scheduled"
+            })
+              
         // Displays the day and time 
             
             console.log(HomeGame);
@@ -43,31 +44,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 node.appendChild(textnode)
                 node.setAttribute("class", "card card-content")
                 schTable.appendChild(node)
+
+                for (let i = 0;i<HomeGame2.length; i++) {
+                  let node = document.createElement("DIV")
+                  let textnode = document.createTextNode(`@ ${HomeGame2[i].DateTime} vs: ${HomeGame2[i].AwayTeam}`)
+                  node.appendChild(textnode)
+                  node.setAttribute("class", "card card-content")
+                  schTable.appendChild(node)
+                  
+              }
                 
             }
+          }
+          );
+        }
             
-            // for (let i = 0;i<HomeGame2.length; i++) {
-            //     let node = document.createElement("DIV")
-            //     let textnode = document.createTextNode(`@ ${HomeGame2[i].DateTime} vs: ${HomeGame2[i].AwayTeam}`)
-            //     node.appendChild(textnode)
-            //     node.setAttribute("class", "card card-content")
-            //     schTable.appendChild(node)
+        // function getApi() {
+        //   var requestUrl = `https://fly.sportsdata.io/v3/mlb/scores/json/Games/2021?key=3a1019f034624af79c1020d9e0360382`
+        //   fetch(requestUrl)
+        //   .then(function(response){
+        //       return response.json();
+        //   })
+        //   .then(function (data) {
+        //       console.log(data);
+        //    //    Filters the games that are scheduled and are for a specfic team 
+        //             var HomeGame2 = data.filter(function(game) {
+        //            return game.HomeTeam === "LAA" && game.Status ==="Scheduled"
+        //            })
+        //        // Displays the day and time 
+                   
+        //            console.log(HomeGame2);
+                  
+        //            for (let i = 0;i<HomeGame2.length; i++) {
+        //                let node = document.createElement("DIV")
+        //                let textnode = document.createTextNode(`@ ${HomeGame2[i].DateTime} vs: ${HomeGame2[i].AwayTeam}`)
+        //                node.appendChild(textnode)
+        //                node.setAttribute("class", "card card-content")
+        //                schTable.appendChild(node)
+                       
+        //            }
+        //          }
+        //          );
+        //        }          
+fetchButton.addEventListener('click', getApi);
+           
+                        
+             
                 
-            // }
+             
             
             
                 
            
-       }
 
    
    
    
-       );
        
 
-}
-fetchButton.addEventListener('click', getApi);
 
 
 
