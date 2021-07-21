@@ -1,4 +1,4 @@
-header {
+header { 
     height: 100px;
     width: 100%;
    
@@ -8,6 +8,39 @@ h1 {
     text-align: center;
     line-height: 100px;
 }
+
+.skeleton {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+
+#masthead {
+    position: relative;
+    z-index: 99;
+    height: 130px;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    overflow: auto;
+    background: #3c4847;
+  }
+  
+  #logo {
+    margin-right: 650px;
+    margin-left: 665px;
+    height: 125px;
+    background-image: url("./ef427c793416427885141f2db653a569.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+    
+
+
+
+/* .nav-wrapper {
+    @extend .blue-text, .text-lighten-4
+} */
 
 /* div.schedule {
    flex: auto;
