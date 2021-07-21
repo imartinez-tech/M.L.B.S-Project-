@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
   <html>
     <head>
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>M.L.B.S.</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
       <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -16,28 +22,20 @@
 
     <body>
         <!-- Dropdown Trigger -->
-  
 
   <!-- Dropdown Structure -->
   
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Logo</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header id="masthead">
+    <div id="logo"></div>
+  </header>
   <div class="input-field col s12" id="options">
-    <select>
+    <select id="teams">
       <option value="" disabled selected>Choose your team</option>
       <option value="TOR" id="team1" data="TOR" >Toronto</option>
       <option value="LAA" id="team2" data="LAA">Los Angeles</option>
-      <option value="3" id="team3">Tampa Bay</option>
-      <option value="3" id="team4">Philadelphia Phillies</option>
-      <option value="3" id="team5">Atlanta</option>
+      <option value="" id="team3">Tampa Bay</option>
+      <option value="PHL" id="team4">Philadelphia Phillies</option>
+      <option value="ATL" id="team5">Atlanta</option>
       <option value="3" id="team6">Milwaukee</option>
       <option value="3" id="team7">Chicago</option>
       <option value="3" id="team8">New York</option>
