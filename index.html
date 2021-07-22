@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <link rel="stylesheet" type="text/css" href="./style.css">
-
+    <link rel="stylesheet" href="style.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
@@ -32,35 +32,35 @@
     <select id="teams">
       <option value="" disabled selected>Choose your team</option>
       <option value="TOR" id="Toronto">Toronto Blue Jays</option>
-      <option value="WAS" id="team2">Washington Nationals</option>
-      <option value="TB" id="team3">Tampa Bay Rays</option>
-      <option value="PHL" id="team4">Philadelphia Phillies</option>
-      <option value="ATL" id="team5">Atlanta Braves</option>
-      <option value="MIL" id="team6">Milwaukee Brewers</option>
-      <option value="CHC" id="team7">Chicago Cubs</option>
-      <option value="NYM" id="team8">New York Mets</option> 
-      <option value="BOS" id="team9">Boston Red Sox </option>
-      <option value="NYY" id="team10">New York Yankees</option>
-      <option value="CHW" id="team11">Chicago White Sox</option>
-      <option value="ARI" id="team12">Arizona Diamondbacks</option>
-      <option value="BAL" id="team13">Baltimore Orioles</option>
-      <option value="CIN" id="team14">Cincinnati Reds</option>
-      <option value="CLE" id="team15">Cleveland Indians</option>
-      <option value="COL" id="team16">Colorado Rockies</option>
-      <option value="DET" id="team17">Detroit Tigers</option>
-      <option value="FLA" id="team18">Florida Marlins</option>
-      <option value="HOU" id="team19">Houston Astros</option>
-      <option value="KAN" id="team20">Kansas City Royals </option>
-      <option value="LAA" id="team21">Los Angeles Angels</option>
-      <option value="LAD" id="team22">Los Angeles Dodgers</option>
-      <option value="MIN" id="team23">Minnesota Twins </option>
-      <option value="OAK" id="team24">Oakland Athletics</option>
-      <option value="PIT" id="team25">Pittsburgh Pirates</option>
-      <option value="SD" id="team26">San Diego Padres </option>
-      <option value="SF" id="team27">San Francisco Giants</option>
-      <option value="SEA" id="team28">Seattle Mariners </option>
-      <option value="STL" id="team29">St. Louis Cardinals</option>
-      <option value="TEX" id="team30">Texas Rangers</option>
+      <option value="WSH" id="Washington">Washington Nationals</option>
+      <option value="TB" id="Tampa Bay">Tampa Bay Rays</option>
+      <option value="PHL" id="Philadelphia">Philadelphia Phillies</option>
+      <option value="ATL" id="Atlanta">Atlanta Braves</option>
+      <option value="MIL" id="Milwaukee">Milwaukee Brewers</option>
+      <option value="CHC" id="Chicago">Chicago Cubs</option>
+      <option value="NYM" id="New York">New York Mets</option> 
+      <option value="BOS" id="Boston">Boston Red Sox </option>
+      <option value="NYY" id="New York">New York Yankees</option>
+      <option value="CHW" id="Chicago">Chicago White Sox</option>
+      <option value="ARI" id="Arizona">Arizona Diamondbacks</option>
+      <option value="BAL" id="Baltimore">Baltimore Orioles</option>
+      <option value="CIN" id="Cincinnati">Cincinnati Reds</option>
+      <option value="CLE" id="Cleveland">Cleveland Indians</option>
+      <option value="COL" id="Colorado">Colorado Rockies</option>
+      <option value="DET" id="Detroit">Detroit Tigers</option>
+      <option value="FLA" id="Florida">Florida Marlins</option>
+      <option value="HOU" id="Houston">Houston Astros</option>
+      <option value="KAN" id="Kansas City">Kansas City Royals </option>
+      <option value="LAA" id="Los Angeles">Los Angeles Angels</option>
+      <option value="LAD" id="Los Angeles">Los Angeles Dodgers</option>
+      <option value="MIN" id="Minnesota">Minnesota Twins </option>
+      <option value="OAK" id="Oakland">Oakland Athletics</option>
+      <option value="PIT" id="Pittsburgh">Pittsburgh Pirates</option>
+      <option value="SD" id="San Diego">San Diego Padres </option>
+      <option value="SF" id="San Francisco">San Francisco Giants</option>
+      <option value="SEA" id="Seattle">Seattle Mariners </option>
+      <option value="STL" id="St Louis">St. Louis Cardinals</option>
+      <option value="TEX" id="Texas">Texas Rangers</option>
       
 
 
@@ -80,9 +80,21 @@
     </div>
   </div>
   
+  <div class=“input”>
+    <h1>Weather</h1>
+    <input type=“text” class=“inputValue” placeholder=“Enter City”>
+    <input type=“submit” value=“Submit” class=“button”>
+    <img src=“https://icons-for-free.com/iconfiles/png/512/clouds+rain+rainy+weather+icon-1320196492721656738.png” alt=“”/>
+    <div class=“display”>
+      <h1 class=“name”></h1>
+      <p class=“desc”></p>
+      <p class=“temp”></p>
+    </div>
+  </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="javascript.js" defer></script>
+  <script src="weather.js" defer></script>
 
     </body>
   </html>

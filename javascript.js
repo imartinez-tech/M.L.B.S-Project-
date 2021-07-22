@@ -45,7 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 let textnode = document.createTextNode(`@ ${HomeGame[i].DateTime} vs: ${HomeGame[i].AwayTeam}`)
                 node.appendChild(textnode)
                 node.setAttribute("class", "card card-content")
-                schTable.appendChild(node)
+                schTable.appendChild(node) 
+                
+                
+
                 
                 
 
@@ -58,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
             } 
-
+            
 
           
           })
