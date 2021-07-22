@@ -1,7 +1,6 @@
 header { 
     height: 100px;
     width: 100%;
-   
 }
  
 h1 {
@@ -13,17 +12,17 @@ h1 {
     width: 100%;
     margin: 0 auto;
     clear: both;
+    
   }
 
 #masthead {
     position: relative;
     z-index: 99;
-    height: 110px;
+    height: 115px;
     width: 100%;
     margin: 0px 0px 30px 0px;
     overflow: auto;
-    background: white;
-    background-image: url("./pexels-rachel-xiao-773063.jpg");
+    background: rgb(77, 77, 77);
   }
   
   #logo {
@@ -42,7 +41,33 @@ h1 {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+.mlb {
+    width: 55px;
+    height: 35px;
+    margin: 8px 10px 5px 20px;
+    border-radius: 10px;
+  }
+
+  .uber {
+    width: 70px;
+    height: 45px;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
     
+
+  footer {
+    padding: 5px;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    text-align: center; 
+    background: rgb(77, 77, 77);
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+  }
 
 
 
