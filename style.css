@@ -18,11 +18,12 @@ h1 {
 #masthead {
     position: relative;
     z-index: 99;
-    height: 130px;
+    height: 110px;
     width: 100%;
     margin: 0px 0px 30px 0px;
     overflow: auto;
-    background: #3c4847;
+    background: white;
+    background-image: url("./pexels-rachel-xiao-773063.jpg");
   }
   
   #logo {
@@ -34,6 +35,13 @@ h1 {
     background-size: contain;
 }
 
+.input-field {
+    position: relative;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
     
 
 
